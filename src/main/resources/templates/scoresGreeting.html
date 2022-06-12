@@ -1,0 +1,40 @@
+<html xmlns:th="https://wwww.thymeleaf.org">
+<head>
+	<title>Scores</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<link th:href="@{/styles/cssandjs/semantic.min.css}" rel="stylesheet" />
+    <link th:href="@{/styles/cssandjs/universal.css}" rel="stylesheet"/>
+    <link th:href="@{/styles/cssandjs/viewer.css}" rel="stylesheet"/>
+</head>
+<body>
+	<!-- "recordings": [
+    {
+      "order": 1, 
+      "personNickname": "Jon",
+      "personName":"Jonathan Saddler",
+      "newScore": 12,
+      "gameId": "Scrabble"
+    }, -->
+	<h1>Scores</h1>
+	<div class="viewer ui container">
+	<div class="ui grid">
+		<div class="twelve wide column">
+			<h2 class="subtitle">Scores for Scrabble Game 1</h2>
+		</div>
+		<table class="ui celled table">
+			<thead><tr><th>Turn</th><th>Nickname</th><th>New Score</th><th>Game Name</th></tr></thead>
+			<tbody>
+				<tr th:each="recording:${recs}">
+					<td th:text="${recording.order}">a</td>
+					<td th:text="${recording.personNickname}">a</td>
+					<td th:text="${recording.newScore}">a</td>
+					<td th:text="${recording.gameId}">a</td>
+					
+				</tr>
+			</tbody>
+		</table>
+	</div>
+	</div>
+	
+</body>
+</html>
