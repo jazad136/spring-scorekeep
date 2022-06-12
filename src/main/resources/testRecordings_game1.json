@@ -1,0 +1,67 @@
+{ 
+  "recordings": [
+    {
+      "order": 1, 
+      "personNickname": "Jon",
+      "personName":"Jonathan Saddler",
+      "newScore": 12,
+      "gameId": "Scrabble Deluxe"
+    },
+    {
+      "order": 1, 
+      "personNickname": "Ma",
+      "personName":"Rose Saddler",
+      "newScore": 25,
+      "gameId": "Scrabble"
+    },
+    {
+      "order": 1, 
+      "personNickname": "GMa",
+      "personName":"Mrs. Laws",
+      "newScore": 53,
+      "gameId": "Scrabble"
+    },
+    {
+      "order": 2, 
+      "personNickname": "Jon",
+      "personName":"Jonathan Saddler",
+      "newScore": 31,
+      "gameId": "Scrabble"
+    },
+    {
+      "order": 2, 
+      "personNickname": "Ma",
+      "personName":"Rose Saddler",
+      "newScore": 36,
+      "gameId": "Scrabble"
+    },
+    {
+      "order": 2, 
+      "personNickname": "GMa",
+      "personName":"Mrs. Laws",
+      "newScore": 3,
+      "gameId": "Scrabble"
+    },
+    {
+      "order": 3, 
+      "personNickname": "Jon",
+      "personName":"Jonathan Saddler",
+      "newScore": 60,
+      "gameId": "Scrabble"
+    },
+    {
+      "order": 3, 
+      "personNickname": "Ma",
+      "personName":"Rose Saddler",
+      "newScore": 35,
+      "gameId": "Scrabble"
+    },
+    {
+      "order": 3, 
+      "personNickname": "GMa",
+      "personName":"Mrs. Laws",
+      "newScore": 100,
+      "gameId": "Scrabble"
+    }
+  ]
+}

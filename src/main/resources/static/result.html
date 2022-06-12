@@ -1,0 +1,21 @@
+<html xmlns:th="https://wwww.thymeleaf.org">
+<body>
+	<h1>Form</h1>
+	<form action="#" th:action="@{/greeting}">
+		<!-- 
+		"id": 1,
+		"name": "start reading",
+		"percentage": 0.00, 
+		-->
+		<div class="nameTxt">
+			<div style="display: block">Name:</div>
+			<div style="display: block"><input type="text" th:field="${name}"/>
+		</div>
+		<div class="submitGrp">
+			<input type="submit" value="Submit"/> 
+			<input type="reset" value="Reset"/>
+		</div>
+	
+	</form>
+</body>
+</html>
