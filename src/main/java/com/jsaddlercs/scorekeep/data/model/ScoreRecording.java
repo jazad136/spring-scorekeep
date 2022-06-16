@@ -2,17 +2,12 @@ package com.jsaddlercs.scorekeep.data.model;
 
 import java.math.BigInteger;
 
-import org.springframework.data.annotation.Id;
-import org.springframework.data.mongodb.core.mapping.Document;
-
-@Document
 public class ScoreRecording {
 	
 	private Integer order;
 	private String personNickname;
 	private Integer newScore;
 	private String gameId;
-	@Id
 	private BigInteger recordingId;
 	
 	public ScoreRecording() { } 
