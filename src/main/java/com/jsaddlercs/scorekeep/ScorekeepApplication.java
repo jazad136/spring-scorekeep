@@ -5,15 +5,16 @@ import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
+import com.jsaddlercs.scorekeep.access.dao.ScoreDAO;
 import com.jsaddlercs.scorekeep.basic.RecordingsImported;
-import com.jsaddlercs.scorekeep.data.db.ScoreRepository;
 
 @SpringBootApplication
 public class ScorekeepApplication implements CommandLineRunner{
 
 	
 	@Autowired RecordingsImported imported;
-	@Autowired ScoreRepository scoreRepository;
+//	@Autowired ScoreRepository scoreRepository;
+	@Autowired ScoreDAO scoreDao;
 //	private static final Logger logger = LoggerFactory.getLogger(ScorekeepApplication.class);
 	
 	public static void main(String[] args) {
@@ -27,6 +28,6 @@ public class ScorekeepApplication implements CommandLineRunner{
 			imported.get(i).setRecordingId(i);
 		
 		imported.stream().forEach(System.out::println);
-		scoreRepository.saveAll(imported);
+//		scoreDao.saveAll(imported);
 	}	
 }
