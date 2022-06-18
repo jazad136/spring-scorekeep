@@ -5,7 +5,7 @@
       "personNickname": "Jon",
       "personName":"Jonathan Saddler",
       "newScore": 12,
-      "gameId": "Scrabble Deluxe"
+      "gameId": "Scrabble"
     },
     {
       "order": 1, 
@@ -17,7 +17,7 @@
     {
       "order": 1, 
       "personNickname": "GMa",
-      "personName":"Mrs. Laws",
+      "personName":"Grandma Laws",
       "newScore": 53,
       "gameId": "Scrabble"
     },
@@ -39,7 +39,7 @@
       "order": 2, 
       "personNickname": "GMa",
       "personName":"Mrs. Laws",
-      "newScore": 3,
+      "newScore": 58,
       "gameId": "Scrabble"
     },
     {
@@ -53,7 +53,7 @@
       "order": 3, 
       "personNickname": "Ma",
       "personName":"Rose Saddler",
-      "newScore": 35,
+      "newScore": 40,
       "gameId": "Scrabble"
     },
     {
