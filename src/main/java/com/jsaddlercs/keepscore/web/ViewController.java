@@ -1,16 +1,16 @@
-package com.jsaddlercs.scorekeep.web;
+package com.jsaddlercs.keepscore.web;
 
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 
-import com.jsaddlercs.scorekeep.access.dao.ScoreDAO;
-import com.jsaddlercs.scorekeep.data.model.GameCreationDto;
-import com.jsaddlercs.scorekeep.data.model.ScoreCreationDto;
-import com.jsaddlercs.scorekeep.data.model.ScoreSet;
-import com.jsaddlercs.scorekeep.data.model.ScoreSetRecording;
-import com.jsaddlercs.scorekeep.data.model.ScoreTableDto;
+import com.jsaddlercs.keepscore.access.dao.ScoreDAO;
+import com.jsaddlercs.keepscore.data.model.GameCreationDto;
+import com.jsaddlercs.keepscore.data.model.ScoreCreationDto;
+import com.jsaddlercs.keepscore.data.model.ScoreSet;
+import com.jsaddlercs.keepscore.data.model.ScoreSetRecording;
+import com.jsaddlercs.keepscore.data.model.ScoreTableDto;
 
 @Controller
 @RequestMapping

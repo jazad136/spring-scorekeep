@@ -1,4 +1,4 @@
-package com.jsaddlercs.scorekeep.config;
+package com.jsaddlercs.keepscore.config;
 
 import javax.sql.DataSource;
 

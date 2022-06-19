@@ -1,4 +1,4 @@
-package com.jsaddlercs.scorekeep.data.model;
+package com.jsaddlercs.keepscore.data.model;
 
 public class GameCreationDto {
 	private String gameName;

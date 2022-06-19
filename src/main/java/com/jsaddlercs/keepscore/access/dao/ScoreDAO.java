@@ -1,4 +1,4 @@
-package com.jsaddlercs.scorekeep.access.dao;
+package com.jsaddlercs.keepscore.access.dao;
 
 import java.sql.ResultSet;
 import java.sql.SQLException;
@@ -11,9 +11,9 @@ import org.springframework.jdbc.core.ResultSetExtractor;
 import org.springframework.jdbc.support.rowset.SqlRowSet;
 import org.springframework.stereotype.Component;
 
-import com.jsaddlercs.scorekeep.basic.RecordingsImported;
-import com.jsaddlercs.scorekeep.data.model.ScoreSet;
-import com.jsaddlercs.scorekeep.data.model.ScoreSetRecording;
+import com.jsaddlercs.keepscore.basic.RecordingsImported;
+import com.jsaddlercs.keepscore.data.model.ScoreSet;
+import com.jsaddlercs.keepscore.data.model.ScoreSetRecording;
 
 @Component
 public class ScoreDAO extends NicknameDataAccessObject<ScoreSet>{
