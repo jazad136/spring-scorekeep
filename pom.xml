@@ -11,7 +11,7 @@
 	<groupId>com.jsaddlercs.scorekeep</groupId>
 	<artifactId>scorekeep</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>jspweb</name>
+	<name>scorekeep</name>
 	<description>Score Keep Application</description>
 	<properties>
 		<java.version>11</java.version>
