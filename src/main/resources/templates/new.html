@@ -20,13 +20,13 @@
 	<div class="ui grid">
 		<div class="twelve wide column">
 			<h2 class="subtitle">Create a New Game</h2>
-			<form action="#" th:action="@{/game/save}" th:object="${form}" method="post">
+			<form action="#" th:action="@{/game/save}" method="post">
 				<fieldset>
 					<input type="submit" id="submitBtn" th:value="Create New Game"/>
 					<input type="reset" id="resetBtn" th:value="Reset Form"/>
 					
 					<label for="nameTxt">Name of Game</label>
-					<input type="input" id="nameTxt"/>
+					<input type="text" th:field="form.gameName" id="nameTxt"/>
 					
 				</fieldset>
 			</form>
