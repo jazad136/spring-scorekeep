@@ -10,10 +10,12 @@ Technologies used in this Application
 
 #### Application Framework Technologies: 
 - Spring Boot 2.5.4
+- Apache Maven  
 
 #### Database Technologies
 - (On the desktop) PostgresQL 14.3 (latest) running on Docker. 
 - Docker
+- Redgate Flyway Community 7.7.3
  
 Currently: 
 This application contains a viewer at endpoint "/" that shows the list of all scores logged in the database "jonnyscorekeep". 
