@@ -11,7 +11,7 @@ public abstract class NicknameDataAccessObject<T> {
 	public NicknameDataAccessObject(JdbcTemplate template)  {
 		this.jdbcTemplate = template;
 		try{this.connection = template.getDataSource().getConnection();}
-		catch(SQLException sqle) { throw new RuntimeException("Connection unavailable"); }
+		catch(SQLException sqle) { throw new RuntimeException("Connection unavailable", sqle); }
 	}
 	
 	public abstract T findById(String id);

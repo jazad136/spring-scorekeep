@@ -25,12 +25,10 @@ public class ScoreDAO extends NicknameDataAccessObject<ScoreSet>{
 	
 	public final String GET_ALL = 
 			"SELECT s.turn_order, s.person_nickname, "
-			+ "s.person_name, s.new_score, g.common_name"
+			+ "s.person_name, s.new_score, g.common_name "
 			+ "FROM score s join game g on s.game_id=g.id";
 	
-//	public final String GET_ONE = "SELECT turn_order, person_nickname, person_name, new_score, game_id "
-//			+ "FROM score"
-//			+ "WHERE person_nickname=?";
+//	public final String GET_ONE = "SELECT * from score WHERE person_nickname=?";
 	public final String GET_ONE = "SELECT s.turn_order, s.person_nickname, "
 			+ "s.person_name, s.new_score, g.common_name"
 			+ "FROM score s join game g on s.game_id=g.id WHERE person_nickname=?";
@@ -61,7 +59,7 @@ ame FROM score s join game g on s.game_id=g.id WHERE person_nickname='Jon';
 	
 	@Override
 	public ScoreSet findById(String personNickname) {
-		SqlRowSet rs = jdbcTemplate.queryForRowSet(GET_ONE, personNickname);
+		SqlRowSet rs = jdbcTemplate.queryForRowSet(GET_ALL, personNickname);
 		ScoreSet scoreSet = new ScoreSet();
 		List<ScoreSetRecording> localRecordings;
 		while(rs.next()) { 
@@ -131,6 +129,26 @@ ame FROM score s join game g on s.game_id=g.id WHERE person_nickname='Jon';
 		ResultSetExtractor<ScoreSet> allExtractor = (rs) -> mapResultSetToScoreSet(rs);
 		ScoreSet scoreSet = jdbcTemplate.query(GET_ALL, allExtractor);
 		return scoreSet;
+//		SqlRowSet rs = jdbcTemplate.queryForRowSet(GET_ALL);
+//		ScoreSet scoreSet = new ScoreSet();
+//		List<ScoreSetRecording> localRecordings = null;
+//		while(rs.next()) { 
+//			ScoreSetRecording localRec = new ScoreSetRecording();
+//			localRec.setOrder(rs.getInt(idxIntTurnOrder));
+//			localRec.setScore(rs.getInt(idxIntNewScore));
+//			localRec.setPersonName(rs.getString(idxStrPersonName));
+//			localRec.setPersonNickname(rs.getString(idxStrPersonNickname));
+//			localRec.setGameName(rs.getString(idxStrCommonName));
+//			if(!scoreSet.getScoreSet().containsKey(localRec.getOrder())) { 
+//				localRecordings = new ArrayList<>();
+//				scoreSet.getScoreSet().put(localRec.getOrder(), localRecordings);
+//			}
+//			else { 
+//				localRecordings = scoreSet.getScoreSet().get(localRec.getOrder());
+//			}
+//			localRecordings.add(localRec);
+//		}
+//		return scoreSet;
 				
 	}
 	public ScoreSetRecording getLastScore() {

@@ -8,7 +8,9 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import com.jsaddlercs.scorekeep.access.dao.ScoreDAO;
 import com.jsaddlercs.scorekeep.data.model.GameCreationDto;
 import com.jsaddlercs.scorekeep.data.model.ScoreCreationDto;
+import com.jsaddlercs.scorekeep.data.model.ScoreSet;
 import com.jsaddlercs.scorekeep.data.model.ScoreSetRecording;
+import com.jsaddlercs.scorekeep.data.model.ScoreTableDto;
 
 @Controller
 @RequestMapping
@@ -22,7 +24,9 @@ public class ViewController {
 	
 	@GetMapping("/")
 	public String getAllScores(Model model) { 
-		model.addAttribute("recs", scoreDao.findAll());
+		ScoreSet all = scoreDao.findAll();
+		ScoreTableDto dto = new ScoreTableDto(all);
+		model.addAttribute("recsets", dto);
 		return "scoresGreeting";
 	}
 	

@@ -9,7 +9,6 @@ public class ScoreSetRecording implements Comparable<ScoreSetRecording> {
 	private String personNickname;
 	private Integer score;
 	private String gameName;
-	private BigInteger recordingId;
 	
 	public ScoreSetRecording() { } 
 	
@@ -41,15 +40,15 @@ public class ScoreSetRecording implements Comparable<ScoreSetRecording> {
 	public String getGameName() { return gameName; }
 	public void setGameName(String gameId) { this.gameName = gameId; }
 
-	public BigInteger getRecordingId() { return recordingId; }
-	public void setRecordingId(Long value) { this.recordingId = BigInteger.valueOf(value); }
-	public void setRecordingId(Integer value) { this.recordingId = BigInteger.valueOf(value); }
-	public void setRecordingId(BigInteger value) { this.recordingId = value; }
+//	public BigInteger getRecordingId() { return recordingId; }
+//	public void setRecordingId(Long value) { this.recordingId = BigInteger.valueOf(value); }
+//	public void setRecordingId(Integer value) { this.recordingId = BigInteger.valueOf(value); }
+//	public void setRecordingId(BigInteger value) { this.recordingId = value; }
 
 	@Override
 	public String toString() {
-		return "ScoreRecording [order=" + order + ", personNickname=" + personNickname + ", newScore=" + score
-				+ ", gameId=" + gameName + "]";
+		return "ScoreSetRecording [order=" + order + ", personNickname=" + personNickname + ", newScore=" + score
+				+ ", gameName=" + gameName + "]";
 	}
 
 	@Override
