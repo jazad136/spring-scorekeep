@@ -17,7 +17,7 @@ public class ScorekeepConfig {
 	        
 	        .username("postgres")
 	        .password("password")
-	        .url("jdbc:postgresql://localhost:5432/javascorekeep")
+	        .url("jdbc:postgresql://localhost:5432/jonnyscorekeep")
 	        .driverClassName("org.postgresql.Driver")
 	        .build();
 	}

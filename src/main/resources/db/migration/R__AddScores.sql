@@ -5,6 +5,6 @@ INSERT INTO score (turn_order, person_nickname, person_name, new_score, game_id)
 INSERT INTO score (turn_order, person_nickname, person_name, new_score, game_id) VALUES (2, 'Jon','Jonathan Saddler', 31, 1);
 INSERT INTO score (turn_order, person_nickname, person_name, new_score, game_id) VALUES (2, 'Ma', 'Rose Saddler'    , 36, 1);
 INSERT INTO score (turn_order, person_nickname, person_name, new_score, game_id) VALUES (2, 'GMa','Grandma Laws'    , 58, 1);
-INSERT INTO score (turn_order, person_nickname, person_name, new_score, game_id) VALUES (2, 'Jon','Jonathan Saddler', 60, 1);
-INSERT INTO score (turn_order, person_nickname, person_name, new_score, game_id) VALUES (2, 'Ma', 'Rose Saddler'    , 40, 1);
-INSERT INTO score (turn_order, person_nickname, person_name, new_score, game_id) VALUES (2, 'GMa','Grandma Laws'    , 100,1);
+INSERT INTO score (turn_order, person_nickname, person_name, new_score, game_id) VALUES (3, 'Jon','Jonathan Saddler', 60, 1);
+INSERT INTO score (turn_order, person_nickname, person_name, new_score, game_id) VALUES (3, 'Ma', 'Rose Saddler'    , 40, 1);
+INSERT INTO score (turn_order, person_nickname, person_name, new_score, game_id) VALUES (3, 'GMa','Grandma Laws'    , 100,1);

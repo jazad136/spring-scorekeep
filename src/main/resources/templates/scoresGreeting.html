@@ -22,22 +22,17 @@
 			<h2 class="subtitle">Scores for Scrabble Game 1</h2>
 		</div>
 		<table class="ui celled table">
-			<thead>
 			<tr>
-				<td th:each="person: ${recsets[0]}">
-					<div th:text="${person.personNickname}">Score</div>
-				</td>
-				
-				<th></th>
+				<th th:each="person: ${recsets.record[0]}" th:text="${person.personNickname}">
+					Nickname
+				</th>
 			</tr>
-			<tbody>
-				<tr th:each="turn: ${recsets}">
-					<td th:text="${turn.order}">Turn</td>
-					<td th:each="person: ${turn}">
-						<div th:text="${person.score}">Score</div>
-					</td>
-				</tr>
-			</tbody>
+			<tr th:each="turn : ${recsets.record}">
+				<td th:each="person : ${turn}" th:text="${person.score}">
+					Score
+				</td>
+			</tr>
+			
 		</table>
 	</div>
 	</div>
