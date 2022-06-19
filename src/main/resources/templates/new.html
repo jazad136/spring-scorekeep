@@ -1,10 +1,10 @@
 <html xmlns:th="https://wwww.thymeleaf.org">
 <head>
-	<title>Scores</title>
+	<title>New Game</title>
 	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 	<link th:href="@{/styles/cssandjs/semantic.min.css}" rel="stylesheet" />
     <link th:href="@{/styles/cssandjs/universal.css}" rel="stylesheet"/>
-    <link th:href="@{/styles/cssandjs/viewer.css}" rel="stylesheet"/>
+    <link th:href="@{/styles/cssandjs/newgame.css}" rel="stylesheet"/>
 </head>
 <body>
 	<!-- "recordings": [
@@ -19,26 +19,21 @@
 	<div class="viewer ui container">
 	<div class="ui grid">
 		<div class="twelve wide column">
-			<h2 class="subtitle">Scores for Scrabble Game 1</h2>
+			<h2 class="subtitle">Create a New Game</h2>
+			<form action="#" th:action="@{/game/save}" th:object="${form}" method="post">
+				<fieldset>
+					<input type="submit" id="submitBtn" th:value="Create New Game"/>
+					<input type="reset" id="resetBtn" th:value="Reset Form"/>
+					
+					<label for="nameTxt">Name of Game</label>
+					<input type="input" id="nameTxt"/>
+					
+				</fieldset>
+			</form>
 		</div>
-		<table class="ui celled table">
-			<thead>
-			<tr>
-				<td th:each="person: ${recsets[0]}">
-					<div th:text="${person.personNickname}">Score</div>
-				</td>
-				
-				<th></th>
-			</tr>
-			<tbody>
-				<tr th:each="turn: ${recsets}">
-					<td th:text="${turn.order}">Turn</td>
-					<td th:each="person: ${turn}">
-						<div th:text="${person.score}">Score</div>
-					</td>
-				</tr>
-			</tbody>
-		</table>
+		<div class="four wide column">
+			<h2 class="subtitle">KeptScore</h2>
+		</div>
 	</div>
 	</div>
 	<!-- order}">a</td>

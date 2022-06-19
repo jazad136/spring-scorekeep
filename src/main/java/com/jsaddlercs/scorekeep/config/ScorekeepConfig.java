@@ -4,19 +4,21 @@ import javax.sql.DataSource;
 
 import org.springframework.boot.jdbc.DataSourceBuilder;
 import org.springframework.context.annotation.Bean;
+import org.springframework.context.annotation.Configuration;
 
-public class CodelevelsConf {
+@Configuration
+public class ScorekeepConfig {
 	@Bean
 	public DataSource dataSource() {
 	    return DataSourceBuilder
 	        .create()
+//	        .username("postgres")
+//	        .password("password")
+	        
 	        .username("postgres")
 	        .password("password")
-	        
-//	        .username("postgres")
-//	        .password("CircleGreen!3")
-//	        .url("jdbc:postgresql://localhost:5432/sclipr")
-//	        .driverClassName("org.postgresql.Driver")
+	        .url("jdbc:postgresql://localhost:5432/javascorekeep")
+	        .driverClassName("org.postgresql.Driver")
 	        .build();
 	}
 }

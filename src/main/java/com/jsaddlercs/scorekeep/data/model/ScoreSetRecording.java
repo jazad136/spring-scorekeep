@@ -2,23 +2,24 @@ package com.jsaddlercs.scorekeep.data.model;
 
 import java.math.BigInteger;
 
-public class ScoreRecording {
+public class ScoreSetRecording {
 	
 	private Integer order;
+	private String personName;
 	private String personNickname;
 	private Integer newScore;
 	private String gameId;
 	private BigInteger recordingId;
 	
-	public ScoreRecording() { } 
+	public ScoreSetRecording() { } 
 	
-	public ScoreRecording(Integer order, String personNickname, Integer score) {
+	public ScoreSetRecording(Integer order, String personNickname, Integer score) {
 		this.order = order;
 		this.personNickname = personNickname;
 		this.newScore = score;
 	}
 
-	public ScoreRecording(Integer order, String personNickname, Integer newScore, String gameId) {
+	public ScoreSetRecording(Integer order, String personNickname, Integer newScore, String gameId) {
 		this.order = order;
 		this.personNickname = personNickname;
 		this.newScore = newScore;
@@ -31,6 +32,9 @@ public class ScoreRecording {
 	public String getPersonNickname() { return personNickname; }
 	public void setPersonNickname(String personName) { this.personNickname = personName; }
 	
+	public String getPersonName() { return personName; }
+	public void setPersonName(String personName) { this.personName = personName; }
+
 	public Integer getNewScore() { return newScore; }
 	public void setNewScore(Integer score) { this.newScore = score; }
 	
