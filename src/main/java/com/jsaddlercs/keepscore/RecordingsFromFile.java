@@ -1,4 +1,4 @@
-package com.jsaddlercs.scorekeep;
+package com.jsaddlercs.keepscore;
 
 import static com.fasterxml.jackson.annotation.JsonAutoDetect.Visibility.ANY;
 import static com.fasterxml.jackson.annotation.PropertyAccessor.FIELD;
@@ -11,8 +11,8 @@ import java.util.stream.Collectors;
 
 import com.fasterxml.jackson.core.type.TypeReference;
 import com.fasterxml.jackson.databind.ObjectMapper;
-import com.jsaddlercs.scorekeep.data.model.Person;
-import com.jsaddlercs.scorekeep.data.model.ScoreRecording;
+import com.jsaddlercs.keepscore.data.model.Person;
+import com.jsaddlercs.keepscore.data.model.ScoreRecording;
 
 
 public class RecordingsFromFile {

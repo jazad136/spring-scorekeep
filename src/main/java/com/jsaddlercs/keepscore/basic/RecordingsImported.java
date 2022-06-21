@@ -1,4 +1,4 @@
-package com.jsaddlercs.scorekeep.basic;
+package com.jsaddlercs.keepscore.basic;
 
 import java.io.IOException;
 import java.util.ArrayList;
@@ -8,9 +8,9 @@ import org.springframework.core.env.Environment;
 import org.springframework.core.io.ClassPathResource;
 import org.springframework.stereotype.Component;
 
-import com.jsaddlercs.scorekeep.RecordingsFromFile;
-import com.jsaddlercs.scorekeep.data.model.Person;
-import com.jsaddlercs.scorekeep.data.model.ScoreRecording;
+import com.jsaddlercs.keepscore.RecordingsFromFile;
+import com.jsaddlercs.keepscore.data.model.Person;
+import com.jsaddlercs.keepscore.data.model.ScoreRecording;
 
 @Component
 public class RecordingsImported extends ArrayList<ScoreRecording> {

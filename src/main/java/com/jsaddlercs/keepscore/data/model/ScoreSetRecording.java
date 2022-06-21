@@ -1,4 +1,4 @@
-package com.jsaddlercs.scorekeep.data.model;
+package com.jsaddlercs.keepscore.data.model;
 
 import java.math.BigInteger;
 

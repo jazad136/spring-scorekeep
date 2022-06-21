@@ -1,4 +1,4 @@
-package com.jsaddlercs.scorekeep.access.dao;
+package com.jsaddlercs.keepscore.access.dao;
 
 import java.sql.Connection;
 import java.sql.SQLException;
