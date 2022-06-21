@@ -30,7 +30,7 @@ public class ScoreDAO extends NicknameDataAccessObject<ScoreSet>{
 	
 //	public final String GET_ONE = "SELECT * from score WHERE person_nickname=?";
 	public final String GET_ONE = "SELECT s.turn_order, s.person_nickname, "
-			+ "s.person_name, s.new_score, g.common_name"
+			+ "s.person_name, s.new_score, g.common_name "
 			+ "FROM score s join game g on s.game_id=g.id WHERE person_nickname=?";
 	
 	public final String GET_ONE_BY_GAME = "SELECT s.turn_order, s.person_nickname, "
@@ -59,7 +59,7 @@ ame FROM score s join game g on s.game_id=g.id WHERE person_nickname='Jon';
 	
 	@Override
 	public ScoreSet findById(String personNickname) {
-		SqlRowSet rs = jdbcTemplate.queryForRowSet(GET_ALL, personNickname);
+		SqlRowSet rs = jdbcTemplate.queryForRowSet(GET_ONE, personNickname);
 		ScoreSet scoreSet = new ScoreSet();
 		List<ScoreSetRecording> localRecordings;
 		while(rs.next()) { 
