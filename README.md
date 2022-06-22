@@ -10,6 +10,7 @@ Technologies used in this Application
 
 #### Application Framework Technologies: 
 - Spring Boot 2.5.4
+- Spring Thymeleaf 
 - Apache Maven 
 
 #### Database Technologies
@@ -17,6 +18,17 @@ Technologies used in this Application
 - (On the desktop) PostgresQL 14.3 (latest) running on Docker. 
 - Redgate Flyway Community 7.7.3
 
+## Snapshots
+
+#### *** Here is how this app used to look before June 19, 2022 ***
+
+![New Look](/images/CurrentLook.png)
+
+#### *** Here is how it looks now ***
+
+![New Look](/images/CurrentLook2.png)
+
+## Status
 Currently: 
 This application contains a viewer at endpoint "/" that shows the list of all scores logged in the database "jonnyscorekeep". 
 
@@ -40,5 +52,3 @@ An out of the box command that can be used to download and run a docker database
 I'm running this command on Windows. Once you have this, all the settings in the configuration of the spring boot project should run to connect to this database, and start this application to be served on a page you can get to from your browser
 
 - Navigate to ```http://localhost:8080``` to see a sample scores page.
-
-Here is how it looks: 
