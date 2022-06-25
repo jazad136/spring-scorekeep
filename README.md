@@ -28,12 +28,16 @@ A Scorekeeper application written in Spring Boot for web access of scores from t
 ![New Look](/images/CurrentLook2.png)
 
 ## Status
-Currently: 
+Currently (as of Tuesday June 21, 2022): 
 This application contains a viewer at endpoint "/" that shows the list of all scores logged in the database "jonnyscorekeep". 
 
 This application when complete will keep a table of scores earned in tabletop games. 
-Supported Applications
-We support the games of "Scrabble", and "Pounce". Soon we will support the game "Spades". 
+
+This application is part of a series of **breakneck, two-week projects**. Each project is completed and posted to GitHub in a span of two weeks to briefly and quickly demonstrate programming concepts.
+
+*Supported Applications*
+
+We support the games of "Scrabble", and "Pounce". 
 
 ## Configuration and Running 
 
